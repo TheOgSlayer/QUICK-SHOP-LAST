@@ -1,0 +1,17 @@
+shards:
+  # Shards given to a player for each kill
+  per-kill: 10
+  count-mobs: true
+  count-players: true
+  # Show "+10 shards" on the action bar after a kill
+  notify-on-kill: true
+  playtime:
+    enabled: true
+    interval-minutes: 5   # shards are awarded every this many minutes online
+    amount: 3
+  # Console command run when a spawner is bought. {mob} is the key used in prices.yml
+  # Optional: change the mob name sent to the command (key = name in prices.yml).
+  # Example: if your spawner plugin wants "iron_golem" instead of "golem", uncomment:
+  mob-names: {}
+  #  golem: iron_golem
+  spawner-command: "givespawner {player} {mob} {amount}"
